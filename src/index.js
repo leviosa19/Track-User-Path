@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const authRoutes = require('./routes/authRoutes')
 
 const app = express()
 
@@ -8,8 +9,13 @@ mongoose.connect(mongoUri, {
     useNewUrlParser: true,
     useCreateIndex: true
 })
+// when connected
 mongoose.connection.on('connected', () => {
-    console.log("Connected to mongo instance")
+    console.log("Connected to mongo instance 🔥🔥")
+})
+// when error occur during connection
+mongoose.connection.on('error', err => {
+    console.log("Error connecting to mongo 😢😢: ", err)
 })
 
 app.get('/', (req, res) => {

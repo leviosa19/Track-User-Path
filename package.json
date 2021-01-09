@@ -1,19 +1,19 @@
 {
-  "name": "Tracker",
-  "version": "1.0.0",
-  "description": "This React Native project shows a map to the user either apple maps or google maps. It shows current location of user on map and then records the user location over time. When user moves around or moves to one location to another, it draws the line on map and tracks the location over time. This is usefull when user goes on Hike, Road trip, or something like that. In shorts this project records the path and save it so that user can recap the path in future world.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.9",
-    "nodemon": "^2.0.6"
-  }
+	"name": "Tracker",
+	"version": "1.0.0",
+	"description": "This React Native project shows a map to the user either apple maps or google maps. It shows current location of user on map and then records the user location over time. When user moves around or moves to one location to another, it draws the line on map and tracks the location over time. This is usefull when user goes on Hike, Road trip, or something like that. In shorts this project records the path and save it so that user can recap the path in future world.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon src/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.0",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.11.9",
+		"nodemon": "^2.0.6"
+	}
 }

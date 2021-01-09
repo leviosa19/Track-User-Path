@@ -4,3 +4,6 @@ This React Native project shows a map to the user either apple maps or google ma
 # Install Dependancies
 
 1. npm i bcrypt express jsonwebtoken mongoose nodemon
+
+# Setup MongoDB
+Open MongoDB and create and connect a Cluster. 
